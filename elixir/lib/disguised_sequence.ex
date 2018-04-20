@@ -4,13 +4,18 @@ defmodule CodeWars.DisguisedSequence do
   calculate u_n for any integer n >= 0.
 
   fct(n) returns un: fct(17) -> 131072, fct(21) -> 2097152
+
+  https://www.codewars.com/kata/563f0c54a22b9345bf000053
   """
 
+  def naive(0), do: 1
+  def naive(1), do: 2
+
   def naive(n) do
-    nil
+    (6 * naive(n-1) * naive(n-2)) / (5 * naive(n-2) - naive(n-1))
   end
 
   def hidden_sequence(n) do
-    nil
+    :math.pow(2, n)
   end
 end
