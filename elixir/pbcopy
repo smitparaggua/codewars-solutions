@@ -1,7 +1,0 @@
-  def seven_divisibility(number), do: seven_divisibility(number, 0)
-  defp seven_divisibility(number, steps) when number < 100, do: [number, steps]
-
-  defp seven_divisibility(number, steps) do
-    div(number, 10) - 2*rem(number, 10)
-    |> seven_divisibility(steps + 1)
-  end
