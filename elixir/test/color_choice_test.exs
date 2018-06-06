@@ -1,5 +1,5 @@
 defmodule CodeWars.ColorChoiceTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
 
   import CodeWars.ColorChoice, only: [checkchoose: 2, factorial: 1]
 

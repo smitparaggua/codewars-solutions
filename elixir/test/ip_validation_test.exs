@@ -1,5 +1,5 @@
 defmodule CodeWars.IpValidationTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
 
   import CodeWars.IpValidation, only: [valid_ip?: 1]
 
